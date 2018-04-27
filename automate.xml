@@ -1,0 +1,43 @@
+-<noeuds>    
+    -<noeud numero ="Q1">
+        -<texte> Etat initial, quelle(s) lettre(s) voulez-vous lire? </texte>
+        -<aiguillage>
+            -<voie>
+                <condition> a,b </condition>
+                <cible> Q1 </cible>
+            </voie>
+            -<voie>
+                <condition> a </condition>
+                <cible> Q2 </cible>
+            </voie>
+        </aiguillage>
+    </noeud>
+    -<noeud numero ="Q2">
+        -<texte> Etat non final </texte>
+        -<voie>
+            <condition> b </condition>
+            <cible> Q3 </cible>
+        </voie>
+    </noeud>
+    -<noeud numero ="Q3">
+        -<texte> Etat non final </texte>
+        -<voie>
+            <condition> b </condition>
+            <cible> Q4 </cible>
+        </voie>
+    </noeud>
+    -<noeud numero ="Q4">
+        -<texte> Etat non final </texte>
+        -<voie>
+            <condition> a </condition>
+            <cible> Q5 </cible>
+        </voie>
+    </noeud>
+    -<noeud numero ="Q5">
+        -<texte> Etat final </texte>
+        -<voie>
+            <condition> a,b </condition>
+            <cible> Q5 </cible>
+        </voie>
+    </noeud>
+</noeuds>
